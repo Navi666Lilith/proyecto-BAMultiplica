@@ -1,0 +1,218 @@
+/* CAMBIOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400;1,500;1,600&display=swap'); /* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap'); /* Rubik */
+
+/* FONTS: 
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+
+
+/* HEADER */
+
+header {
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    min-height: 70px;
+}
+
+nav ul {
+    display: flex;  
+}
+
+nav li {
+    list-style: none; 
+    padding: 10px;  
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-left: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+#inicio {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#inicio h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#inicio p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+
+/* MAIN */
+
+main {
+    background-color: #d9e3e3;
+    font-family: 'Rubik', sans-serif;
+}
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Sobre Mi */
+
+#sobre-mi {
+    text-align: center;
+}
+
+.lenguaje {
+    list-style: none;
+    display: flex;
+    justify-content: center;  
+    padding: 20px; 
+}
+
+.lenguaje li {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.lenguaje li:hover{
+    background-color: #5876bc;
+    color: #FFF;
+    transition: 0.2s;
+}
+
+/* Proyectos */
+
+#proyectos {
+    text-align: center;
+    background-color: #5876bc;
+}
+
+.trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.proyecto {
+    padding: 20px;
+    margin: 40px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.datos {
+    padding: 20px;
+}
+
+.datos img {
+    border: 1px solid #32487b;
+}
+
+.datos h4{
+    text-transform: uppercase;
+}
+
+.datos p {
+    width: 150px;
+    height: 150px;
+    overflow-x: auto;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.datos button {
+    border: none;
+    background-color: #5876bc;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.datos button:hover{
+    background-color: #9fb3e2;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.info-footer {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding: 20px;
+}
