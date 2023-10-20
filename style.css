@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --black: #000;
+    --white: #FFF;
+    --dark-cobalt-blue: #092147;
+    --cobalt-blue: #1A488E;
+    --light-cobalt-blue: #97B2DE;
+    --gray-blue: #D0D7E1;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400;1,500;1,600&display=swap'); /* Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap'); /* Rubik */
 
@@ -18,83 +27,106 @@
 /* HEADER */
 
 header {
-    background-color: #000;
-    color: #FFF;
-    padding: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 nav {
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    width: 35%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    min-height: 70px;
+    justify-content: center;
+    position: fixed;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1rem 0.1rem;
+    border-radius: 3rem;
 }
 
 nav ul {
-    display: flex;  
+    display: flex;
 }
 
 nav li {
-    list-style: none; 
+    list-style: none;
     padding: 10px;  
 }
 
 nav a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #FFF;
-    margin-left: 10px;
+    color: var(--white);
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
 
-#inicio {
+nav li:hover {
+    border-radius: 50%;
+    background-color: var(--light-cobalt-blue);
+}
+
+nav a:hover {
+    color: var(--dark-cobalt-blue);
+}
+
+#home {
     display: flex;
+    flex-direction: column;
     padding: 10px;
     align-items: center;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
 }
 
-#inicio h2 {
+#home h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
 }
 
-#inicio p {
+#home p {
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
-    padding: 20px;
+    padding: 1.2rem;
     text-align: justify;
 }
 
+#home img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid var(--cobalt-blue);
+    border-radius: 50%;
+}
 
 
 /* MAIN */
 
 main {
-    background-color: #d9e3e3;
+    background-color: var(--gray-blue);
     font-family: 'Rubik', sans-serif;
 }
 
 main h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding: 30px;
@@ -102,117 +134,273 @@ main h2 {
     text-align: center;
 }
 
-/* Sobre Mi */
+main p {
+    font-size: 1.4rem;
+}
 
-#sobre-mi {
+/* About Me */
+
+#about-me {
     text-align: center;
 }
 
-.lenguaje {
+#about-me p {
+    padding: 20px 0;
+}
+
+.lenguage {
     list-style: none;
     display: flex;
     justify-content: center;  
     padding: 20px; 
 }
 
-.lenguaje li {
+.lenguage li {
     padding: 10px;
     margin-left: 10px;
     border-radius: 10px;
 }
 
-.lenguaje li:hover{
-    background-color: #5876bc;
-    color: #FFF;
+.lenguage li:hover{
+    background-color: var(--light-cobalt-blue);
+    color: var(--dark-cobalt-blue);
     transition: 0.2s;
 }
 
-/* Proyectos */
+/* Portfolio */
 
-#proyectos {
+#portfolio {
     text-align: center;
-    background-color: #5876bc;
+
 }
 
-.trabajos {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.work {
+    background-color: rgba(9, 33, 71, 0.376);
+    border: 1px solid var(--black);
+    width: 350px;
+    margin: 10px;
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.work-info {
+    padding: 20px;
+}
+
+.work-info h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.work-info p {
+    text-align: justify;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.work-info button {
+    border: none;
+    color: var(--gray-blue);
+    background-color: var(--dark-cobalt-blue);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.work-info button:hover {
+    background-color: var(--gray-blue);
+    color: var(--dark-cobalt-blue);
+    transition: 0.2s;
+}
+
+#contact-me {
+    padding: 20px;
+}
+
+#contact-me form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.proyecto {
+#contact-me input, #contact-me textarea {
+    margin-bottom: 10px;
     padding: 20px;
-    margin: 40px 20px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    display: flex;
+    background-color: rgba(9, 33, 71, 0.555);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    border: 1px solid var(--dark-cobalt-blue);
+    border-radius: 5px;
 }
 
-.datos {
-    padding: 20px;
+#contact-me textarea {
+    resize: none;
 }
 
-.datos img {
-    border: 1px solid #32487b;
+#contact-me input::placeholder, #contact-me textarea::placeholder {
+    color: var(--gray-blue);
+    font-family: 'Montserrat', sans-serif;
 }
 
-.datos h4{
-    text-transform: uppercase;
-}
-
-.datos p {
-    width: 150px;
-    height: 150px;
-    overflow-x: auto;
-    margin: 10px 0;
-    text-align: justify;
-}
-
-.datos button {
+#contact-me button {
     border: none;
-    background-color: #5876bc;
-    padding: 15px;
-    border-radius: 15px;
+    color: var(--gray-blue);
+    background-color: var(--dark-cobalt-blue);
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.datos button:hover{
-    background-color: #9fb3e2;
-    font-weight: 500;
-    transition: 0.5s;
+#contact-me button:hover {
+    background-color: var(--gray-blue);
+    color: var(--dark-cobalt-blue);
+    border: 1px solid var(--cobalt-blue);
+    transition: 0.2s;
 }
 
 
 /* FOOTER */
 
 footer {
-    background-color: #000;
-    color: #FFF;
+    background-color: var(--black);
+    color: var(--gray-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    padding-bottom: 120px;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .info-footer {
     display: flex;
     padding: 10px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-footer h6 {
+.social-networks h2 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
     text-align: center;
     text-transform: uppercase;
+    padding: 10px;
+}
+
+.networks {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.networks li a {
+    color: var(--gray-blue);
 }
 
 .copyright {
     margin-top: 20px;
     padding: 20px;
+}
+
+
+/* MEDIAS QUERIES */
+
+@media (max-width: 769px) {
+    nav {
+        width: 40%;
+    }
+
+    #home img {
+        width: 300px;
+        height: auto;
+    }
+    
+    .work {
+        width: 260px;
+    }
+}  
+
+@media (max-width: 600px) {
+    nav {
+        width: 50%;
+    }
+
+    #contact-me input, #contact-me textarea {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    /* Header */
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        width: 65%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #home h2 {
+        font-size: 1.2rem;
+    }
+
+    #home img {
+        width: 200px;
+        height: auto;
+    }
+
+    /* Main */
+
+    main h2 {
+        font-size: 1.2rem;
+    }
+
+    main p {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .work-info p, .work-info button, #contact-me button {
+        font-size: 0.7rem;
+    }
+    
+    .work-info button, #contact-me button {
+        padding: 15px;
+    }
+    
+    #contact-me input, #contact-me textarea {
+        width: 80%;
+    }
+
+    /* Footer */
+
+    footer {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    
+    .social-networks h2 {
+        font-size: 1.2rem;
+    }
 }

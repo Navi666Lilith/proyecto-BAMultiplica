@@ -4,89 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint 1 - Belén Buttarelli</title>
+    <title>Belén Buttarelli</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Icon Fonts -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 
 <body>
     <header>
         <nav> <!-- Navegador -->
-            <a href="#inicio"><i class='bx bx-code bx-md'></i></a>
             <ul>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contactos">Contactos</a></li>
+                <li><a href="#home"><i class='bx bxs-home bx-sm'></i></a></li>
+                <li><a href="#about-me"><i class='bx bxs-user bx-sm'></i></a></li>
+                <li><a href="#portfolio"><i class='bx bx-code bx-sm'></i></a></li>
+                <li><a href="#contact-me"><i class='bx bxs-chat bx-sm'></i></a></li>
             </ul>
         </nav>
-        <section id="inicio"> <!-- Inicio -->
-            <img src="https://placehold.co/300x400/png" alt="Yo">
+        <section id="home"> <!-- Inicio -->
             <div class="info">
+                <h2>Hi! I'm</h2>
                 <h1>Belén Buttarelli</h1>
                 <h2>Desarolladora Web</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
+            <img src="https://placehold.co/400x400/png" alt="Inicio">
         </section>
     </header>
 
     <main>
-        <section id="sobre-mi"> <!-- Sobre Mi -->
-            <h2>Sobre Mi</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <ul class="lenguaje">
+        <section id="about-me"> <!-- Sobre Mi -->
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cumque minus tempora natus nisi quos, ea voluptate unde voluptates exercitationem sed earum sit. Placeat, maxime excepturi commodi magnam voluptatem voluptas?</p>
+            <ul class="lenguage">
                 <li><i class='bx bxl-html5 bx-md'></i></li>
                 <li><i class='bx bxl-css3 bx-md'></i></li>
                 <li><i class='bx bxl-javascript bx-md'></i></li>
             </ul>
         </section>
-        <section id="proyectos"> <!-- Proyectos -->
-            <h2>Mis Proyectos</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <div class="trabajos">
-                <section class="proyecto">
-                    <img src="https://placehold.co/110x200/png" alt="Proyecto 1">
-                    <div class="datos">
-                        <h4>Titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button>Ver página</button>
+        <section id="portfolio"> <!-- Portfolio -->
+            <h2>My Portfolio</h2>
+            <div class="container">
+                <section class="work">
+                    <img src="https://placehold.co/350x200/png" alt="Proyecto 1">
+                    <div class="work-info">
+                        <h3>Proyecto 1</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button>Ver más</button>
                     </div>
                 </section>
-                <section class="proyecto">
-                    <img src="https://placehold.co/110x200/png" alt="Proyecto 1">
-                    <div class="datos">
-                        <h4>Titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button>Ver página</button>
-                    </div>
-                </section>
-                <section class="proyecto">
-                    <img src="https://placehold.co/110x200png" alt="Proyecto 1">
-                    <div class="datos">
-                        <h4>Titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button>Ver página</button>
+                <section class="work">
+                    <img src="https://placehold.co/350x200/png" alt="Proyecto 2">
+                    <div class="work-info">
+                        <h3>Proyecto 2</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button>Ver más</button>
                     </div>
                 </section>
             </div>
+        </section>
+        <section id="contact-me"> <!-- Contactos -->
+            <h2>Contact Me!</h2>
+            <form action="">
+                <input type="text" name="nombre" placeholder="Tu nombre o tu apodo" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" rows="7" placeholder="Escribe tu mensaje para contactanos" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <section class="info-footer">
-            <div id="contactos"> <!-- Contactos -->
-                <h6>Contactos</h6>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <img src="https://placehold.co/50x50/png" alt="Imagen Footer">
-            <div id="redes"> <!-- Redes Sociales -->
-                <h6>Mis Redes Sociales</h6>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="social-networks"> <!-- Redes Sociales -->
+                <h2>My Social Networks</h2>
+                <ul class="networks">
+                    <li><a href="#" alt="Instragram"><i class='bx bxl-instagram-alt bx-md'></i></a></li>
+                    <li><a href="#" alt="Github"><i class='bx bxl-github bx-md'></i></a></li>
+                    <li><a href="#" alt="Linkedin"><i class='bx bxl-linkedin-square bx-md'></i></a></li>
+                </ul>
             </div>
         </section>
-        <section class="copyright">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </section>
+        <p class="copyright">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     </footer>
 </body>
 </html>
