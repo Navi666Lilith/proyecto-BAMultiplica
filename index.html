@@ -13,12 +13,16 @@
 
 <body>
     <header>
-        <nav> <!-- Navegador -->
+        <nav class="navegation"> <!-- Navegador -->
             <ul>
                 <li><a href="#home"><i class='bx bxs-home bx-sm'></i></a></li>
                 <li><a href="#about-me"><i class='bx bxs-user bx-sm'></i></a></li>
                 <li><a href="#portfolio"><i class='bx bx-code bx-sm'></i></a></li>
                 <li><a href="#contact-me"><i class='bx bxs-chat bx-sm'></i></a></li>
+            </ul>
+            <ul class="switch-dark-light">
+                <i class='bx bxs-sun'></i>
+                <i class='bx bxs-moon'></i>
             </ul>
         </nav>
         <section id="home"> <!-- Inicio -->
@@ -34,7 +38,8 @@
     <main>
         <section id="about-me"> <!-- Sobre Mi -->
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cumque minus tempora natus nisi quos, ea voluptate unde voluptates exercitationem sed earum sit. Placeat, maxime excepturi commodi magnam voluptatem voluptas?</p>
+            <p>Soy estudiante de Programación, sobre todo orientada al Diseño Web. Me encanta aprender y asi afrontar nuevos desafios. Uno de mis propositos es formarme como Desarrolladora Full Stack como también aprender otros idiomas como el Inglés y el Italiano. Aparte de eso me encanta el Diseño Gráfico y los Videojuegos.</p>
+            <h3>My Skills</h3>
             <ul class="lenguage">
                 <li><i class='bx bxl-html5 bx-md'></i></li>
                 <li><i class='bx bxl-css3 bx-md'></i></li>
@@ -49,7 +54,7 @@
                     <div class="work-info">
                         <h3>Punto Puntito Jazmin</h3>
                         <p>Tienda Online de Crochet y Amigurumis. Proyecto realizado con HTML y CSS.</p>
-                        <button>Ver más</button>
+                        <a href="#">Ver más</a> 
                     </div>
                 </section>
                 <section class="work">
@@ -57,7 +62,7 @@
                     <div class="work-info">
                         <h3>Proyect in Progress</h3>
                         <p>Proyecto en desarrollo...</p>
-                        <button>Ver más</button>
+                        <a href="#">Ver más</a>
                     </div>
                 </section>
                 <section class="work">
@@ -65,7 +70,7 @@
                     <div class="work-info">
                         <h3>Proyect in Progress</h3>
                         <p>Proyecto en desarrollo...</p>
-                        <button>Ver más</button>
+                        <a href="#">Ver más</a>
                     </div>
                 </section>
                 <section class="work">
@@ -73,7 +78,7 @@
                     <div class="work-info">
                         <h3>Proyect in Progress</h3>
                         <p>Proyecto en desarrollo...</p>
-                        <button>Ver más</button>
+                        <a href="#">Ver más</a>
                     </div>
                 </section>
             </div>
@@ -102,5 +107,7 @@
         </section>
         <p class="copyright">&copy; Navi - All rights reserved</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
